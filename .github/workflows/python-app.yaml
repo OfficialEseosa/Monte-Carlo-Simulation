@@ -19,12 +19,12 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: 3.10  # Set the Python version you want to use
+        python-version: 3.10  # Specify a supported Python version (e.g., 3.10)
 
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install statistics  # Ensure dependencies are installed (standard library for your script)
+        # No additional dependencies required for your script
 
     - name: Run simulation
       run: python main.py
